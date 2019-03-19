@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
+import React from "react";
+import ReactDOM from "react-dom";
+import Barchart from './Barchart';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <h3>Bare Start</h3>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <svg width="800" height="600">
+        <Barchart x={50} y={70} width={400} height={300} />
+      </svg>
+    </div>
+  );
 }
 
 export default App;
